@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: TODO your mongodb uri
