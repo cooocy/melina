@@ -1,6 +1,6 @@
 package cc.dcyy.melina.application.ro.ca
 
-data class ReportRO(
+class ReportRO(
     var cpuRate: Int,
     var cpuTemperature: Int,
     var memoryUsed: Long,

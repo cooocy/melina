@@ -42,7 +42,7 @@ dependencies {
 
     implementation 'cn.hutool:hutool-all:5.7.13'
     implementation 'er:carian:1.0.1'
-
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.withType(KotlinCompile) {
