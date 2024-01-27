@@ -1,5 +1,6 @@
 package cc.dcyy.melina.domain.pethome
 
+import er.rennala.repository.AggregateRoot
 import org.springframework.data.mongodb.core.mapping.Document
 
 /**
@@ -9,4 +10,4 @@ import org.springframework.data.mongodb.core.mapping.Document
  * @param monitorInterval 监控上报间隔, s
  */
 @Document("petHome_clientConfig")
-data class ClientConfig(val heartbeatInterval: Int, val monitorInterval: Int)
+data class ClientConfig(val heartbeatInterval: Int, val monitorInterval: Int) : AggregateRoot

@@ -1,5 +1,6 @@
 package cc.dcyy.melina.domain.pethome
 
+import er.rennala.repository.AggregateRoot
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.Instant
 
@@ -9,7 +10,7 @@ import java.time.Instant
  * @param ts 启动时间
  */
 @Document("petHome_bootRecord")
-data class BootRecord @Deprecated("Called by mongodb deserialize.") constructor(val ts: Instant) {
+data class BootRecord @Deprecated("Called by mongodb deserialize.") constructor(val ts: Instant) : AggregateRoot {
 
     constructor() : this(Instant.now())
 

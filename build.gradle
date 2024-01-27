@@ -19,7 +19,7 @@ repositories {
         // read only
         credentials {
             username 'cooocy@foxmail.com'
-            password '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'
+            password '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'
         }
     }
 }
@@ -33,7 +33,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // Rennala: A Web Server Infra using SpringBoot.
-    implementation 'er:rennala:1.0.5-springboot-3.1.0'
+    implementation 'er:rennala:1.0.6-springboot-3.1.0'
 
     implementation 'io.github.microutils:kotlin-logging-jvm:2.0.11'
 

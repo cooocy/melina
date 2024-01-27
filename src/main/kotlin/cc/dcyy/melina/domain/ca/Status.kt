@@ -1,6 +1,7 @@
 package cc.dcyy.melina.domain.ca
 
 import cn.hutool.core.util.IdUtil
+import er.rennala.repository.AggregateRoot
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document
 import java.time.Instant
@@ -25,7 +26,7 @@ class Status @Deprecated("Called by mongodb deserialize.") constructor(
     val mount: Boolean,
     val smb: Boolean,
     val dns: Boolean
-) {
+) : AggregateRoot {
 
     constructor(
         cpu: CPU, memory: Memory, disk: Disk, mount: Boolean, smb: Boolean, dns: Boolean
