@@ -8,7 +8,7 @@ plugins {
 }
 
 group = 'cc.dcyy.melina'
-version = '0.0.1-SNAPSHOT'
+version = ''
 sourceCompatibility = '17'
 
 repositories {
@@ -16,10 +16,9 @@ repositories {
     mavenCentral()
     maven {
         url 'https://maven.pkg.github.com/cooocy/the-lands-between'
-        // read only
         credentials {
             username 'cooocy@foxmail.com'
-            password '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'
+            password 'TODO'
         }
     }
 }

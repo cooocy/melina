@@ -38,6 +38,7 @@ out/
 
 .DS_Store
 
+application-prod.yml
 /http-request/
 /gradle/
 /logs
